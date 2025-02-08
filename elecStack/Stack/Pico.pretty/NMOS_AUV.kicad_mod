@@ -1,0 +1,103 @@
+(footprint "NMOS_AUV"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.05 -7.51 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e14d13ed-ade3-424f-b3f1-629373e0d22e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "NMOS_AUV"
+		(at -0.05 -10 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7dbf7166-82ef-4d27-814c-0adf2410792d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "NMOS_AUV"
+		(at -0.05 -9.15 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "793e9ac2-231a-4d01-ac20-882ab58ba18f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "62843535-d21a-4df4-adb8-f6bb22fda6ba")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c80bafd-db64-4956-9dca-6da11910d350")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at -0.1 -8.31 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "6e02e7e3-9299-4fe0-b4f6-e303fffe2beb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 0)
+		(size 0.559 0.724)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "e7b8e007-2fc6-4e26-b6c2-f161b6752de7")
+	)
+	(pad "2" smd rect
+		(at -0.95 1.969)
+		(size 0.559 0.724)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "5b753f68-b1f1-4a11-affc-07f86306d109")
+	)
+	(pad "3" smd rect
+		(at 0.95 1.969)
+		(size 0.559 0.724)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "b7d30300-d348-497f-b34b-83a63f0ea6c6")
+	)
+)
