@@ -1,8 +1,27 @@
 #ifndef RMCS2303drive_h
 #define RMCS2303drive_h
 
-#include "SoftwareSerial.h"
-#include "Arduino.h"
+#include <pico/stdlib.h>
+#include <pico/time.h>
+#include <pico/binary_info.h>
+#include <pico/stdio/driver.h>
+#include <pico/stdio.h>
+#include <stdio.h>
+#include <string>
+using std::string;
+// #include "SoftwareSerial.h"
+// #include "Arduino.h"
+
+#define UARTID uart0
+#define DATA_BITS 8
+#define STOP_BITS 1
+#define PARITY    UART_PARITY_NONE
+
+#define UART_TX_PIN 0
+#define UART_RX_PIN 1
+
+typedef unsigned char byte;
+typedef unsigned int word;
 
 class RMCS2303
 {
@@ -10,8 +29,8 @@ class RMCS2303
   public:
     void Serial0(long baudrate);
     void Serial_selection(byte x);
-    void begin(HardwareSerial *hport,long baudrate);
-    void begin(SoftwareSerial *sport, long baudrate);
+    // void begin(HardwareSerial *hport,long baudrate);
+    // void begin(SoftwareSerial *sport, long baudrate);
     byte Enable_Digital_Mode(byte slave_id,byte dir);
     byte Speed(byte slave_id,int SPEED);    
     byte EncoderPosition_LPR(byte slave_id,int LPR);
@@ -25,15 +44,15 @@ class RMCS2303
     byte EncoderPosition_enable(byte slave_id);
     byte Disable_Position_Mode(byte slave_id);
     byte Absolute_position(byte slave_id,long int count);
-    String ReadSingleRegister(byte slave_id, int address,unsigned int No_register);
-    String Modbus_string(byte slave_id,byte FC,int address,unsigned int data);
-    String print_hex(byte number);
+    string ReadSingleRegister(byte slave_id, int address,unsigned int No_register);
+    string Modbus_string(byte slave_id,byte FC,int address,unsigned int data);
+    string print_hex(byte number);
     byte nibble(char c);
-    byte LRC(String s,byte len);
+    byte LRC(string s,byte len);
     void hexToBytes(byte *byteArray, char *hexString);
     long int Speed_Feedback(byte slave_id) ;
     long int Position_Feedback(byte slave_id);
-    long int value(String input);
+    long int value(string input);
     byte READ_PARAMETER(byte slave_id);
     long int READ_DEVICE_MODBUS_ADDRESS(byte slave_id);
     long int READ_INP_CONTROL_BYTE(byte slave_id);
