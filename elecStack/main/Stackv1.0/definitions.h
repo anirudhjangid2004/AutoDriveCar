@@ -44,6 +44,6 @@
 
 
 // Function prototypes
-void init_uart(uart_inst_t *, uint, uint, uint);
+void init_uart(uart_inst_t *, uint, uint8_t, uint8_t);
 
 #endif // DEFINITIONS_H
