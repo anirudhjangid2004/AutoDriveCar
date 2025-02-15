@@ -7370,7 +7370,7 @@
 			)
 		)
 	)
-	(global_label "TOGG4"
+	(global_label "TOGG5"
 		(shape input)
 		(at 46.99 177.8 180)
 		(fields_autoplaced yes)
