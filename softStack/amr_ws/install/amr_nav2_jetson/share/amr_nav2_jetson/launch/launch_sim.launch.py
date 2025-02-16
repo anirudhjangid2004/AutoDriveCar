@@ -1,0 +1,1 @@
+/home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/src/AMR_Nav2_Jetson/launch/launch_sim.launch.py

@@ -1,0 +1,57 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/build/amr_nav2_jetson
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/drive_amr_teleop.rviz
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/empty.yaml
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/my_controllers.yaml
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/view_amr.rviz
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/camera.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/depth_camera.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/gazebo_control.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/inertial_macros.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/lidar.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/robot.urdf.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/robot_core.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/ros2_control.xacro
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/launch/launch_sim.launch.py
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/launch/rsp.launch.py
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/worlds/custom_world1.world
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/worlds/empty.world
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/ament_index/resource_index/package_run_dependencies/amr_nav2_jetson
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/ament_index/resource_index/parent_prefix_path/amr_nav2_jetson
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/ament_prefix_path.sh
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/ament_prefix_path.dsv
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/path.sh
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/path.dsv
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.bash
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.sh
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.zsh
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.dsv
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/package.dsv
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/ament_index/resource_index/packages/amr_nav2_jetson
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/cmake/amr_nav2_jetsonConfig.cmake
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/cmake/amr_nav2_jetsonConfig-version.cmake
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/package.xml
