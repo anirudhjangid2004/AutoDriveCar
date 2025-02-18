@@ -1,5 +1,7 @@
 /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/drive_amr_teleop.rviz
 /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/empty.yaml
+/home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/gazebo_params.yaml
+/home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/mapper_params_online_async.yaml
 /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/my_controllers.yaml
 /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/view_amr.rviz
 /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/camera.xacro

@@ -1,0 +1,35 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/drive_amr_teleop.rviz
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/empty.yaml
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/gazebo_params.yaml
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/mapper_params_online_async.yaml
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/my_controllers.yaml
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/config/view_amr.rviz
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/camera.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/depth_camera.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/gazebo_control.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/inertial_macros.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/lidar.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/robot.urdf.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/robot_core.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/description/ros2_control.xacro
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/launch/launch_sim.launch.py
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/launch/rsp.launch.py
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/worlds/custom_world1.world
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/worlds/empty.world
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/ament_index/resource_index/package_run_dependencies/amr_nav2_jetson
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/ament_index/resource_index/parent_prefix_path/amr_nav2_jetson
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/path.sh
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/environment/path.dsv
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.bash
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.sh
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.zsh
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/local_setup.dsv
+-- Symlinking: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/package.dsv
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/ament_index/resource_index/packages/amr_nav2_jetson
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/cmake/amr_nav2_jetsonConfig.cmake
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/cmake/amr_nav2_jetsonConfig-version.cmake
+-- Up-to-date symlink: /home/arkadeep/EDL/AutoDriveCar/softStack/amr_ws/install/amr_nav2_jetson/share/amr_nav2_jetson/package.xml
