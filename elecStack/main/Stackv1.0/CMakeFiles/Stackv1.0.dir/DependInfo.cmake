@@ -147,11 +147,11 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_mem_ops/include"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2040/boot_stage2/include"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+  "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.c" "CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/audio/audio_device.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/dfu/dfu_device.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/dfu/dfu_device.c.o.d"
@@ -185,6 +185,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_clocks/clocks.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o.d"
+  "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_pll/pll.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_sync/sync.c.o.d"
@@ -220,6 +221,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o.d"
+  "/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.cpp" "CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o" "gcc" "CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   )
 

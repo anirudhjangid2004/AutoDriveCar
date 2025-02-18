@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(MotorDriverRMCS2303 MotorDriverRMCS2303.c )
+add_executable(MotorDriverRMCS2303 MotorDriverRMCS2303.c RMCS2303drive.cpp)
 
 pico_set_program_name(MotorDriverRMCS2303 "MotorDriverRMCS2303")
 pico_set_program_version(MotorDriverRMCS2303 "0.1")
@@ -46,7 +46,11 @@ pico_enable_stdio_usb(MotorDriverRMCS2303 1)
 
 # Add the standard library to the build
 target_link_libraries(MotorDriverRMCS2303
-        pico_stdlib)
+        pico_stdlib
+        pico_time
+        pico_binary_info
+        pico_stdio
+        hardware_uart)
 
 # Add the standard include files to the build
 target_include_directories(MotorDriverRMCS2303 PRIVATE

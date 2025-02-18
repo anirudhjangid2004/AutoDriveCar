@@ -7,7 +7,7 @@
 #include <pico/stdio/driver.h>
 #include <pico/stdio.h>
 #include <stdio.h>
-#include <string>
+#include <string.h>
 using std::string;
 // #include "SoftwareSerial.h"
 // #include "Arduino.h"

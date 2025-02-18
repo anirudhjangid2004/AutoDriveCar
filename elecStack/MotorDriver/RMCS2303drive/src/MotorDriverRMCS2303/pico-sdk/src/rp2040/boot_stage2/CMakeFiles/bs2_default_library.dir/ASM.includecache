@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anirudh/EDL/AutoDriveCar/elecStack/MotorDriver/RMCS2303drive/src/MotorDriverRMCS2303/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
+

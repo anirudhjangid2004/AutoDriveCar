@@ -69,19 +69,19 @@ include CMakeFiles/Stackv1.0.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Stackv1.0.dir/flags.make
 
-CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o: CMakeFiles/Stackv1.0.dir/flags.make
-CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o: Stackv1.0.c
-CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o: CMakeFiles/Stackv1.0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o"
-	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o -MF CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o.d -o CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o -c /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.c
+CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o: CMakeFiles/Stackv1.0.dir/flags.make
+CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o: Stackv1.0.cpp
+CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o: CMakeFiles/Stackv1.0.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o"
+	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o -MF CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o.d -o CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o -c /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.cpp
 
-CMakeFiles/Stackv1.0.dir/Stackv1.0.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Stackv1.0.dir/Stackv1.0.c.i"
-	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.c > CMakeFiles/Stackv1.0.dir/Stackv1.0.c.i
+CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.i"
+	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.cpp > CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.i
 
-CMakeFiles/Stackv1.0.dir/Stackv1.0.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Stackv1.0.dir/Stackv1.0.c.s"
-	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.c -o CMakeFiles/Stackv1.0.dir/Stackv1.0.c.s
+CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.s"
+	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.cpp -o CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.s
 
 CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/Stackv1.0.dir/flags.make
 CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o: /home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c
@@ -1192,9 +1192,23 @@ CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fi
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
 	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
+CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/Stackv1.0.dir/flags.make
+CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o: /home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c
+CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/Stackv1.0.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o"
+	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o -c /home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c
+
+CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.i"
+	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.i
+
+CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.s"
+	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.s
+
 # Object files for target Stackv1.0
 Stackv1_0_OBJECTS = \
-"CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o" \
+"CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o" \
 "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o" \
 "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o" \
 "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o" \
@@ -1274,12 +1288,13 @@ Stackv1_0_OBJECTS = \
 "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/video/video_device.c.o" \
 "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/tusb.c.o" \
 "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/common/tusb_fifo.c.o" \
-"CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+"CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
+"CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o"
 
 # External object files for target Stackv1.0
 Stackv1_0_EXTERNAL_OBJECTS =
 
-Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o
+Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2040/pico_platform/platform.c.o
@@ -1360,11 +1375,12 @@ Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tin
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/tusb.c.o
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/common/tusb_fifo.c.o
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/build.make
 Stackv1.0.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 Stackv1.0.elf: /home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 Stackv1.0.elf: CMakeFiles/Stackv1.0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Linking CXX executable Stackv1.0.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Linking CXX executable Stackv1.0.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Stackv1.0.dir/link.txt --verbose=$(VERBOSE)
 	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-objdump -h /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.elf > Stackv1.0.dis
 	/home/anirudh/.pico-sdk/toolchain/13_3_Rel1/bin/arm-none-eabi-objdump -d /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv1.0/Stackv1.0.elf >> Stackv1.0.dis

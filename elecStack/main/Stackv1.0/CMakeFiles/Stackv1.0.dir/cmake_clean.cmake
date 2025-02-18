@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o"
-  "CMakeFiles/Stackv1.0.dir/Stackv1.0.c.o.d"
+  "CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o"
+  "CMakeFiles/Stackv1.0.dir/Stackv1.0.cpp.o.d"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/audio/audio_device.c.o"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/cdc/cdc_device.c.o"
@@ -68,6 +68,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_flash/flash.c.o.d"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_gpio/gpio.c.o.d"
+  "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o"
+  "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_i2c/i2c.c.o.d"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq.c.o.d"
   "CMakeFiles/Stackv1.0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
