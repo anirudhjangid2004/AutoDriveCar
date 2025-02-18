@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Stackv1_2_0 Stackv1_2_0.cpp )
+add_executable(Stackv1_2_0 Stackv1_2_0.cpp service_calls.cpp RMCS2303drive.cpp)
 
 pico_set_program_name(Stackv1_2_0 "Stackv1_2_0")
 pico_set_program_version(Stackv1_2_0 "0.1")

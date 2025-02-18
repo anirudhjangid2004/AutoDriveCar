@@ -1,4 +1,5 @@
 
+#include "service_calls.h"
 #include "definitions.h"
 
 void init_uart(uart_inst_t *uart, uint baudrate, uint8_t tx_pin, uint8_t rx_pin){
@@ -16,6 +17,17 @@ void init_i2c(i2c_inst_t *i2c, uint baudrate, uint8_t sda_pin, uint8_t scl_pin){
     gpio_set_function(scl_pin, GPIO_FUNC_I2C);
     gpio_pull_up(sda_pin);
     gpio_pull_up(scl_pin);
+}
+
+// Initializes the SPI bus
+void init_spi(spi_inst_t *spi, uint baudrate, uint8_t miso_pin, uint8_t mosi_pin, uint8_t sck_pin, uint8_t cs_pin){
+    spi_init(spi, baudrate);
+    gpio_set_function(miso_pin, GPIO_FUNC_SPI);
+    gpio_set_function(mosi_pin, GPIO_FUNC_SPI);
+    gpio_set_function(sck_pin, GPIO_FUNC_SPI);
+    gpio_set_function(cs_pin, GPIO_FUNC_SIO);
+    gpio_set_dir(cs_pin, GPIO_OUT);
+    gpio_put(cs_pin, 1);
 }
 
 // Initializes the GPIO pins
