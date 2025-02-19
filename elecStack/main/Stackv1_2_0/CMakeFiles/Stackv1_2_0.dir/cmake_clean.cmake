@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Stackv1_2_0.dir/RMCS2303drive.cpp.o"
+  "CMakeFiles/Stackv1_2_0.dir/RMCS2303drive.cpp.o.d"
   "CMakeFiles/Stackv1_2_0.dir/Stackv1_2_0.cpp.o"
   "CMakeFiles/Stackv1_2_0.dir/Stackv1_2_0.cpp.o.d"
   "CMakeFiles/Stackv1_2_0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/lib/tinyusb/src/class/audio/audio_device.c.o"
@@ -154,6 +156,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Stackv1_2_0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "CMakeFiles/Stackv1_2_0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o"
   "CMakeFiles/Stackv1_2_0.dir/home/anirudh/.pico-sdk/sdk/2.1.0/src/rp2_common/pico_unique_id/unique_id.c.o.d"
+  "CMakeFiles/Stackv1_2_0.dir/service_calls.cpp.o"
+  "CMakeFiles/Stackv1_2_0.dir/service_calls.cpp.o.d"
   "Stackv1_2_0.elf"
   "Stackv1_2_0.pdb"
 )

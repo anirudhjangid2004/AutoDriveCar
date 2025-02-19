@@ -91,7 +91,9 @@ byte RMCS2303::Enable_Digital_Mode(byte slave_id, byte dir)
 	
 byte RMCS2303::Disable_Digital_Mode(byte slave_id,byte dir)
     { 
-        int data; byte j,slave_id;
+        int data; 
+        byte j;
+        // byte slave_id;
         if(dir==0)   data=256;
         if(dir==1)   data=264;
         j=WriteSingleRegister(slave_id,2,data);
