@@ -1,4 +1,4 @@
-24642533815793170
+24646015824339532
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -18921,6 +18921,13 @@ connector JST ZH horizontal
 15
 14
 Connector_Molex
+IRF540N
+Molex SPOX Connector System, 5267-03A, 3 Pins per row (http://www.molex.com/pdm_docs/sd/022035035_sd.pdf), generated with kicad-footprint-generator
+connector Molex SPOX side entry
+0
+3
+3
+Connector_Molex
 Molex_CLIK-Mate_502382-0270_1x02-1MP_P1.25mm_Vertical
 Molex CLIK-Mate series connector, 502382-0270 (http://www.molex.com/pdm_docs/sd/5023820270_sd.pdf), generated with kicad-footprint-generator
 connector Molex CLIK-Mate side entry
@@ -35139,6 +35146,13 @@ Surface mounted pin header SMD 2x40 2.00mm double row
 0
 80
 80
+Connector_PinHeader_2.54mm
+IMU_SAPRE
+Through hole straight pin header, 1x06, 2.54mm pitch, single row
+Through hole pin header THT 1x06 2.54mm single row
+0
+12
+6
 Connector_PinHeader_2.54mm
 PinHeader_1x01_P2.54mm_Horizontal
 Through hole angled pin header, 1x01, 2.54mm pitch, 6mm pin length, single row
