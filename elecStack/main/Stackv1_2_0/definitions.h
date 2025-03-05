@@ -19,10 +19,10 @@
 
 
 // Communication pins
-#define UART_ID_Primary uart0
+#define UART_ID_Primary uart0      // Reserved for motor driver
 #define UART_ID_Secondary uart1
-#define UART_TX_PIN_Primary 0
-#define UART_RX_PIN_Primary 1
+#define UART_TX_PIN_Primary 0      // Reserved for motor driver
+#define UART_RX_PIN_Primary 1      // Reserved for motor driver
 #define UART_TX_PIN_Secondary 4
 #define UART_RX_PIN_Secondary 5
 
