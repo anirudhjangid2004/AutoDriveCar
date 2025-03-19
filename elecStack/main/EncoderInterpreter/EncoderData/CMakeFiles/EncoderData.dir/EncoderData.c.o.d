@@ -69,4 +69,7 @@ CMakeFiles/EncoderData.dir/EncoderData.c.o: \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_types.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_types.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/lock.h \
- /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/stdio.h
+ /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/stdio.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pwm.h
