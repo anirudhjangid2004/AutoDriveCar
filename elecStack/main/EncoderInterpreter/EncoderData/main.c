@@ -3,6 +3,26 @@
 #include "motorDriver.h"
 #include "usbDriver.h"
 
+/*
+    Hardware Timer ISR, sets the received PWM
+    values to the respective PWM pins
+    @param t: Timer instance
+    @return: true
+
+*/
+bool timer_callback(repeating_timer_t *t) {
+    if (allocate_pwm) {
+        set_pwm(PWM_PIN_1, pwmValues[0]);
+        set_pwm(PWM_PIN_2, pwmValues[1]);
+        set_pwm(PWM_PIN_3, pwmValues[2]);
+        set_pwm(PWM_PIN_4, pwmValues[3]);
+    }
+
+    sendUSBMessage(TUSB_MSG_ID_ENCODER, (uint8_t *)REVOLUTIONS, 16);
+    sendUSBMessage(TUSB_MSG_ID_IMU, (uint8_t *)imuValue, 4);
+
+    return true;
+}
 
 /*
     Function to initialize the encoder output pins
@@ -109,6 +129,10 @@ void bind_encoder_interrupts(void){
     gpio_set_irq_enabled_with_callback(EDGE_GPIO_4, GPIO_IRQ_EDGE_RISE, true, &gpio_callback_channel);
 }
 
+/*
+    USB IRQ Handler
+    Reads the USB buffer
+*/
 void usb_irq_handler(void) {
     readUSBBuffer();
 }
@@ -118,26 +142,39 @@ int main() {
     // Initialize stdio
     stdio_init_all();
 
-    // Initialize all the pins
-    init_motor_pins();
-    init_interrupt_pins();
-    init_pwm_pins();
+    sleep_ms(3000); // To test
 
     // Initialize TinyUSB stack
     tusb_init();
+    push_message("USB Initialized\n");
+
+    repeating_timer_t timer;
+    bool timer_started = add_repeating_timer_ms(10, timer_callback, NULL, &timer);
+    if(timer_started) push_message("Timer started\n");
+    else push_message("Timer not started\n");
+
+    // Initialize all the pins
+    init_motor_pins();
+    push_message("Motor pins initialized\n");
+    init_interrupt_pins();
+    push_message("Interrupt pins initialized\n");
+    init_pwm_pins();
+    push_message("PWM pins initialized\n");
 
     // Enable USB IRQ
     irq_set_exclusive_handler(USBCTRL_IRQ, usb_irq_handler);
     irq_set_enabled(USBCTRL_IRQ, true);
+    push_message("USB IRQ enabled\n");
+    push_message("Start Sending messages now!\n");
 
     // Bind the encoder pins to interrupts
     bind_encoder_interrupts();
+    push_message("Encoder interrupts bound\n");
+
+    push_message("******STACK UP AND RUNNING**********\n");
 
     while (allocate_pwm) {
-        printf("TimePeriod A: %llu us ", TimePeriod[0]);
-        printf("                      ");
-        printf("TimePeriod B: %llu us\n", TimePeriod[1]);
-        sleep_ms(500);
+        tight_loop_contents();
     }
 
     return 0;

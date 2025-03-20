@@ -1949,30 +1949,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
-motorDriver.o: motorDriver.c.o
-.PHONY : motorDriver.o
-
-# target to build an object file
-motorDriver.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/motorDriver.c.o
-.PHONY : motorDriver.c.o
-
-motorDriver.i: motorDriver.c.i
-.PHONY : motorDriver.i
-
-# target to preprocess a source file
-motorDriver.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/motorDriver.c.i
-.PHONY : motorDriver.c.i
-
-motorDriver.s: motorDriver.c.s
-.PHONY : motorDriver.s
-
-# target to generate assembly for a file
-motorDriver.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/motorDriver.c.s
-.PHONY : motorDriver.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2207,9 +2183,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... motorDriver.o"
-	@echo "... motorDriver.i"
-	@echo "... motorDriver.s"
 .PHONY : help
 
 

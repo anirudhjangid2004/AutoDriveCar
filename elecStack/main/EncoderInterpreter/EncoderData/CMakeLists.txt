@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(main main.c motorDriver.c) 
+add_executable(main main.c) 
 
 pico_set_program_name(main "main")
 pico_set_program_version(main "0.1")
@@ -48,7 +48,11 @@ pico_enable_stdio_usb(main 1)
 target_link_libraries(main
         pico_stdlib
         hardware_gpio
-        hardware_pwm)
+        hardware_pwm
+        hardware_irq
+        hardware_timer)
+        # hardware_regs_usb
+        # hardware_structs_usb)
 
 # Add the standard include files to the build
 target_include_directories(main PRIVATE

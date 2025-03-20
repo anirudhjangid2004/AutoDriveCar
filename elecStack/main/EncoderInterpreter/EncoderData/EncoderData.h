@@ -8,6 +8,7 @@
 #include "hardware/irq.h"
 #include "hardware/regs/usb.h"
 #include "hardware/structs/usb.h"
+#include "hardware/timer.h"
 
 #define PWM_PERIOD_US 1000 // 1 kHz frequency
 
@@ -23,3 +24,4 @@ bool log_value_4 = true;
 
 void gpio_callback_channel(uint, uint32_t);
 void bind_encoder_interrupts(void);
+void init_interrupt_pins(void);

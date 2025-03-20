@@ -73,9 +73,6 @@ CMakeFiles/main.dir/main.c.o: \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_types.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/lock.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/stdio.h \
- /home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/pinPlan.h \
- /home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/motorDriver.h \
- /home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/usbDriver.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_common.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/inttypes.h \
@@ -107,4 +104,10 @@ CMakeFiles/main.dir/main.c.o: \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc.h \
- /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.h
+ /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/usb.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb_dpram.h \
+ /home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/pinPlan.h \
+ /home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/motorDriver.h \
+ /home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/usbDriver.h
