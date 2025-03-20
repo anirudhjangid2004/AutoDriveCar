@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/EncoderData.dir/EncoderData.c.o"
-  "CMakeFiles/EncoderData.dir/EncoderData.c.o.d"
   "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o"
   "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o"
@@ -150,6 +148,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o"
   "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o.d"
+  "CMakeFiles/EncoderData.dir/main.c.o"
+  "CMakeFiles/EncoderData.dir/main.c.o.d"
+  "CMakeFiles/EncoderData.dir/motorDriver.c.o"
+  "CMakeFiles/EncoderData.dir/motorDriver.c.o.d"
   "EncoderData.elf"
   "EncoderData.pdb"
 )

@@ -78,7 +78,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "PICO_NO_FLASH=0"
   "PICO_NO_HARDWARE=0"
   "PICO_ON_DEVICE=1"
-  "PICO_PROGRAM_NAME=\"EncoderData\""
+  "PICO_PROGRAM_NAME=\"main\""
   "PICO_PROGRAM_VERSION_STRING=\"0.1\""
   "PICO_RP2040=1"
   "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
@@ -152,7 +152,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/EncoderData.c" "CMakeFiles/EncoderData.dir/EncoderData.c.o" "gcc" "CMakeFiles/EncoderData.dir/EncoderData.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o" "gcc" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o" "gcc" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o" "gcc" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o.d"
@@ -221,6 +220,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o" "gcc" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o" "gcc" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o.d"
+  "/home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/main.c" "CMakeFiles/EncoderData.dir/main.c.o" "gcc" "CMakeFiles/EncoderData.dir/main.c.o.d"
+  "/home/anirudh/EDL/AutoDriveCar/elecStack/main/EncoderInterpreter/EncoderData/motorDriver.c" "CMakeFiles/EncoderData.dir/motorDriver.c.o" "gcc" "CMakeFiles/EncoderData.dir/motorDriver.c.o.d"
   "/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   )
 

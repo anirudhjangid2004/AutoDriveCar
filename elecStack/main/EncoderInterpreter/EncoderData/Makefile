@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named EncoderData
+# Target rules for targets named main
 
 # Build rule for target.
-EncoderData: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EncoderData
-.PHONY : EncoderData
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-EncoderData/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/build
-.PHONY : EncoderData/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -181,36 +181,12 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
-EncoderData.o: EncoderData.c.o
-.PHONY : EncoderData.o
-
-# target to build an object file
-EncoderData.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/EncoderData.c.o
-.PHONY : EncoderData.c.o
-
-EncoderData.i: EncoderData.c.i
-.PHONY : EncoderData.i
-
-# target to preprocess a source file
-EncoderData.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/EncoderData.c.i
-.PHONY : EncoderData.c.i
-
-EncoderData.s: EncoderData.c.s
-.PHONY : EncoderData.s
-
-# target to generate assembly for a file
-EncoderData.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/EncoderData.c.s
-.PHONY : EncoderData.c.s
-
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.o
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -218,7 +194,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.i: hom
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -226,7 +202,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.s: hom
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o
@@ -234,7 +210,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.o: home/an
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -242,7 +218,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.i: home/an
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -250,7 +226,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.s: home/an
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o
@@ -258,7 +234,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.o: home/an
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -266,7 +242,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.i: home/an
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -274,7 +250,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.s: home/an
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
@@ -282,7 +258,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -290,7 +266,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -298,7 +274,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o
@@ -306,7 +282,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.o: home/an
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -314,7 +290,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.i: home/an
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -322,7 +298,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.s: home/an
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o
@@ -330,7 +306,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.o: home/
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -338,7 +314,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.i: home/
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -346,7 +322,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.s: home/
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o
@@ -354,7 +330,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.o: home/an
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -362,7 +338,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.i: home/an
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -370,7 +346,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.s: home/an
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
@@ -378,7 +354,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.o: h
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -386,7 +362,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.i: h
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -394,7 +370,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.s: h
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o
@@ -402,7 +378,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.o: home/an
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -410,7 +386,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.i: home/an
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -418,7 +394,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.s: home/an
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
@@ -426,7 +402,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: h
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -434,7 +410,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: h
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -442,7 +418,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: h
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o
@@ -450,7 +426,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.o: h
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -458,7 +434,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.i: h
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -466,7 +442,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.s: h
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o
@@ -474,7 +450,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.o: hom
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.i
@@ -482,7 +458,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.i: hom
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.s
@@ -490,7 +466,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.s: hom
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o
@@ -498,7 +474,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.o: home/anirud
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -506,7 +482,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.i: home/anirud
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -514,7 +490,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.s: home/anirud
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o
@@ -522,7 +498,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.o: home/anirudh/.pi
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.i
@@ -530,7 +506,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.i: home/anirudh/.pi
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.s
@@ -538,7 +514,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.s: home/anirudh/.pi
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o
@@ -546,7 +522,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.o: home/ani
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.i
@@ -554,7 +530,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.i: home/ani
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.s
@@ -562,7 +538,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.s: home/ani
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/device/usbd_control.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
@@ -570,7 +546,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -578,7 +554,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -586,7 +562,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
@@ -594,7 +570,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -602,7 +578,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -610,7 +586,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.o: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o
@@ -618,7 +594,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.o: home/anirudh/.pico-sdk/
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.i: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.i
@@ -626,7 +602,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.i: home/anirudh/.pico-sdk/
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.s: home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.s
@@ -634,7 +610,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.s: home/anirudh/.pico-sdk/
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o
@@ -642,7 +618,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.o: home/anirudh
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.i
@@ -650,7 +626,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.i: home/anirudh
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.s
@@ -658,7 +634,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.s: home/anirudh
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/claim.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o
@@ -666,7 +642,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.o: home/a
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.i
@@ -674,7 +650,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.i: home/a
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.s
@@ -682,7 +658,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.s: home/a
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/critical_section.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o
@@ -690,7 +666,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.o: home/anirudh/
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.i
@@ -698,7 +674,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.i: home/anirudh/
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.s
@@ -706,7 +682,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.s: home/anirudh/
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/lock_core.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o
@@ -714,7 +690,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.o: home/anirudh/.pic
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.i
@@ -722,7 +698,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.i: home/anirudh/.pic
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.s
@@ -730,7 +706,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.s: home/anirudh/.pic
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/mutex.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o
@@ -738,7 +714,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.o: home/anirudh/.pico-
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.i
@@ -746,7 +722,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.i: home/anirudh/.pico-
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.s
@@ -754,7 +730,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.s: home/anirudh/.pico-
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_sync/sem.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o
@@ -762,7 +738,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.o: home/anirudh/.pico
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.i
@@ -770,7 +746,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.i: home/anirudh/.pico
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.s
@@ -778,7 +754,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.s: home/anirudh/.pico
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/time.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o
@@ -786,7 +762,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.o: home/ani
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.i
@@ -794,7 +770,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.i: home/ani
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.s
@@ -802,7 +778,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.s: home/ani
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/timeout_helper.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o
@@ -810,7 +786,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.o: home/anirudh/.
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.i
@@ -818,7 +794,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.i: home/anirudh/.
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.s
@@ -826,7 +802,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.s: home/anirudh/.
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/datetime.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o
@@ -834,7 +810,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.o: home/anirudh/.pic
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.i
@@ -842,7 +818,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.i: home/anirudh/.pic
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.s
@@ -850,7 +826,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.s: home/anirudh/.pic
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/pheap.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o
@@ -858,7 +834,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.o: home/anirudh/.pic
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.i
@@ -866,7 +842,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.i: home/anirudh/.pic
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.s
@@ -874,7 +850,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.s: home/anirudh/.pic
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_util/queue.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o
@@ -882,7 +858,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.i
@@ -890,7 +866,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.s
@@ -898,7 +874,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/platform.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -906,7 +882,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.o: 
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -914,7 +890,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.i: 
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -922,7 +898,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.s: 
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o
@@ -930,7 +906,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.o: home/a
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.i
@@ -938,7 +914,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.i: home/a
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.s
@@ -946,7 +922,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.s: home/a
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o
@@ -954,7 +930,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.o: home
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_divider/divider.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o
@@ -962,7 +938,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.o: home/ani
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.i
@@ -970,7 +946,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.i: home/ani
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.s
@@ -978,7 +954,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.s: home/ani
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_flash/flash.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o
@@ -986,7 +962,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.i
@@ -994,7 +970,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1002,7 +978,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o
@@ -1010,7 +986,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.o: home/anirudh
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.i
@@ -1018,7 +994,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.i: home/anirudh
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.s
@@ -1026,7 +1002,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.s: home/anirudh
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -1034,7 +1010,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.o
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o
@@ -1042,7 +1018,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.o: home/anirudh
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.i
@@ -1050,7 +1026,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.i: home/anirudh
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s
@@ -1058,7 +1034,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.s: home/anirudh
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o
@@ -1066,7 +1042,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.i
@@ -1074,7 +1050,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.s
@@ -1082,7 +1058,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync/sync.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -1090,7 +1066,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spi
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -1098,7 +1074,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spi
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -1106,7 +1082,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spi
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o
@@ -1114,7 +1090,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.o: home/ani
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.i
@@ -1122,7 +1098,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.i: home/ani
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.s
@@ -1130,7 +1106,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.s: home/ani
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_ticks/ticks.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o
@@ -1138,7 +1114,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.o: home/ani
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.i
@@ -1146,7 +1122,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.i: home/ani
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.s
@@ -1154,7 +1130,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.s: home/ani
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o
@@ -1162,7 +1138,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.i
@@ -1170,7 +1146,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.s
@@ -1178,7 +1154,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o
@@ -1186,7 +1162,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1194,7 +1170,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1202,7 +1178,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -1210,7 +1186,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.o: ho
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1218,7 +1194,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.i: ho
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1226,7 +1202,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.s: ho
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o
@@ -1234,7 +1210,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.o: 
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.i
@@ -1242,7 +1218,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.i: 
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.s
@@ -1250,7 +1226,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.s: 
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o
@@ -1258,7 +1234,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1266,7 +1242,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1274,7 +1250,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o
@@ -1282,7 +1258,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.i
@@ -1290,7 +1266,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.s
@@ -1298,7 +1274,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_atomic/atomic.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -1306,7 +1282,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: ho
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -1314,7 +1290,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.o: home/ani
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1322,7 +1298,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.i: home/ani
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1330,7 +1306,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.s: home/ani
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -1338,7 +1314,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.o: hom
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -1346,7 +1322,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.i: hom
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -1354,7 +1330,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.s: hom
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -1362,7 +1338,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_inter
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -1370,7 +1346,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_inter
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -1378,7 +1354,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_inter
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
@@ -1386,7 +1362,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.o: home/anirudh/.
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/crt0.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -1394,7 +1370,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.o: h
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -1402,7 +1378,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.i: h
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -1410,7 +1386,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.s: h
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o
@@ -1418,7 +1394,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.o:
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_divider/divider_hardware.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
@@ -1426,7 +1402,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
@@ -1434,7 +1410,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp20
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
@@ -1442,7 +1418,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp20
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
@@ -1450,7 +1426,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp20
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o
@@ -1458,7 +1434,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.o: home/
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.i
@@ -1466,7 +1442,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.i: home/
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.s
@@ -1474,7 +1450,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.s: home/
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_math.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
@@ -1482,7 +1458,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_r
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
@@ -1490,7 +1466,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enume
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1498,7 +1474,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enume
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1506,7 +1482,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enume
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o
@@ -1514,7 +1490,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.o: home/anirudh
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.i
@@ -1522,7 +1498,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.i: home/anirudh
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.s
@@ -1530,7 +1506,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.s: home/anirudh
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
@@ -1538,7 +1514,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.o:
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
@@ -1546,7 +1522,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
@@ -1554,7 +1530,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
@@ -1562,7 +1538,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o
@@ -1570,7 +1546,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.o: home/an
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.i
@@ -1578,7 +1554,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.i: home/an
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.s
@@ -1586,7 +1562,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.s: home/an
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_math.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
@@ -1594,7 +1570,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
@@ -1602,7 +1578,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_ae
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o
@@ -1610,7 +1586,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.i
@@ -1618,7 +1594,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.s
@@ -1626,7 +1602,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_malloc/malloc.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
@@ -1634,7 +1610,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.o: ho
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o
@@ -1642,7 +1618,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.o: hom
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1650,7 +1626,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.i: hom
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1658,7 +1634,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.s: hom
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/panic.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
@@ -1666,7 +1642,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.i
@@ -1674,7 +1650,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.s
@@ -1682,7 +1658,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_printf/printf.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o
@@ -1690,7 +1666,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.o: home/ani
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.i
@@ -1698,7 +1674,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.i: home/ani
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.s
@@ -1706,7 +1682,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.s: home/ani
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime/runtime.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1714,7 +1690,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.o
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1722,7 +1698,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.i
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1730,7 +1706,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.s
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1738,7 +1714,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_c
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1746,7 +1722,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_c
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1754,7 +1730,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_c
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -1762,7 +1738,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_s
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -1770,7 +1746,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_s
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -1778,7 +1754,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_s
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -1786,7 +1762,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standa
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -1794,7 +1770,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standa
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -1802,7 +1778,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standa
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o
@@ -1810,7 +1786,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.o: home/anirudh
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.i
@@ -1818,7 +1794,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.i: home/anirudh
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.s
@@ -1826,7 +1802,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.s: home/anirudh
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio/stdio.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o
@@ -1834,7 +1810,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.o
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1842,7 +1818,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.i
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1850,7 +1826,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.s
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
@@ -1858,7 +1834,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.o: home
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1866,7 +1842,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.i: home
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1874,7 +1850,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.s: home
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
@@ -1882,7 +1858,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descrip
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1890,7 +1866,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descrip
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1898,7 +1874,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descrip
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -1906,7 +1882,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.o: home/aniru
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1914,7 +1890,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.i: home/aniru
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1922,7 +1898,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.s: home/aniru
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.o: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o
@@ -1930,7 +1906,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.o: home
 
 # target to build an object file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.o
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.i: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1938,7 +1914,7 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.i: home
 
 # target to preprocess a source file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.s: home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1946,8 +1922,56 @@ home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.s: home
 
 # target to generate assembly for a file
 home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EncoderData.dir/build.make CMakeFiles/EncoderData.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.c.s
+
+main.o: main.c.o
+.PHONY : main.o
+
+# target to build an object file
+main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.o
+.PHONY : main.c.o
+
+main.i: main.c.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.c.s
+.PHONY : main.c.s
+
+motorDriver.o: motorDriver.c.o
+.PHONY : motorDriver.o
+
+# target to build an object file
+motorDriver.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/motorDriver.c.o
+.PHONY : motorDriver.c.o
+
+motorDriver.i: motorDriver.c.i
+.PHONY : motorDriver.i
+
+# target to preprocess a source file
+motorDriver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/motorDriver.c.i
+.PHONY : motorDriver.c.i
+
+motorDriver.s: motorDriver.c.s
+.PHONY : motorDriver.s
+
+# target to generate assembly for a file
+motorDriver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/motorDriver.c.s
+.PHONY : motorDriver.c.s
 
 # Help Target
 help:
@@ -1959,12 +1983,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... bs2_default_bin"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
-	@echo "... EncoderData"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
-	@echo "... EncoderData.o"
-	@echo "... EncoderData.i"
-	@echo "... EncoderData.s"
+	@echo "... main"
 	@echo "... home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.o"
 	@echo "... home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/audio/audio_device.s"
@@ -2183,6 +2204,12 @@ help:
 	@echo "... home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... motorDriver.o"
+	@echo "... motorDriver.i"
+	@echo "... motorDriver.s"
 .PHONY : help
 
 
