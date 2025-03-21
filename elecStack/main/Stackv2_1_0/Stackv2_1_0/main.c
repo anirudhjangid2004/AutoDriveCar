@@ -132,48 +132,57 @@ void bind_encoder_interrupts(void){
     USB IRQ Handler
     Reads the USB buffer
 */
-void usb_irq_handler(void) {
-    readUSBBuffer();
-}
+// void usb_irq_handler(void) {
+//     printf("USB IRQ\n");
+//     readUSBBuffer();
+// }
 
 int main() {
 
     // Initialize stdio
     stdio_init_all();
 
-    sleep_ms(3000); // To test
+
+    sleep_ms(8000); // To test
+
 
     // Initialize TinyUSB stack
     tusb_init();
-    push_message("******STACK UP AND RUNNING**********\n");
-    push_message("USB Initialized\n");
+
+    while (!tud_mounted()) {
+        sleep_ms(10);  // Wait for host connection
+    }
+    
+    push_message("********* STACK UP AND RUNNING!!! **********\n");
+    push_message("USB Initialized.....................NEAT\n");
 
     repeating_timer_t timer;
     bool timer_started = add_repeating_timer_ms(10, timer_callback, NULL, &timer);
-    if(timer_started) push_message("Timer started\n");
-    else push_message("Timer not started\n");
+    if(timer_started) push_message("Timer started..................NEAT\n");
+    else push_message("Timer not started...............ERROR\n");
 
     // Initialize all the pins
     init_motor_pins();
-    push_message("Motor pins initialized\n");
+    push_message("Motor pins initialized..............NEAT\n");
     init_interrupt_pins();
-    push_message("Interrupt pins initialized\n");
+    push_message("Interrupt pins initialized..........NEAT\n");
     init_pwm_pins();
-    push_message("PWM pins initialized\n");
-
-    // Enable USB IRQ
-    irq_set_exclusive_handler(USBCTRL_IRQ, usb_irq_handler);
-    irq_set_enabled(USBCTRL_IRQ, true);
-    push_message("USB IRQ enabled\n");
+    push_message("PWM pins initialized................NEAT\n");
 
     // Bind the encoder pins to interrupts
     bind_encoder_interrupts();
-    push_message("Encoder interrupts bound\n");
+    push_message("Encoder interrupts bound............NEAT\n");
 
-    push_message("Ready to take input!\n");
+    push_message("Ready to take input!................NEAT\n");
 
     while (allocate_pwm) {
+        tud_task(); // tinyusb device task
+        readUSBBuffer();
+        tud_cdc_write_clear();
         tight_loop_contents();
+        sleep_ms(2);
+        // push_message("\n");
+        // tight_loop_contents();
     }
 
     return 0;
