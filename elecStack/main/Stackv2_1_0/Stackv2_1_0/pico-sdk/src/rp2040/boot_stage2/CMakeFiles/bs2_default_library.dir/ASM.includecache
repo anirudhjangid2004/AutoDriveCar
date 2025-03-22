@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
+

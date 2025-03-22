@@ -1,0 +1,180 @@
+#include "EncoderData.h"
+#include "pinPlan.h"
+#include "motorDriver.h"
+#include "usbDriver.h"
+
+/*
+    Hardware Timer ISR, sets the received PWM
+    values to the respective PWM pins
+    @param t: Timer instance
+    @return: true
+*/
+bool timer_callback(repeating_timer_t *t) {
+    if (allocate_pwm) {
+        set_pwm(PWM_PIN_1, pwmValues[0]);
+        set_pwm(PWM_PIN_2, pwmValues[1]);
+        set_pwm(PWM_PIN_3, pwmValues[2]);
+        set_pwm(PWM_PIN_4, pwmValues[3]);
+    }
+
+    sendUSBMessage(TUSB_MSG_ID_ENCODER, (uint8_t *)REVOLUTIONS, 16);
+    sendUSBMessage(TUSB_MSG_ID_IMU, (uint8_t *)imuValue, 4);
+
+    return true;
+}
+
+/*
+    Function to initialize the encoder output pins
+    According to pins defined in pinPlan.h
+*/
+void init_interrupt_pins(){
+    gpio_init(EDGE_GPIO_1);
+    gpio_init(EDGE_GPIO_2);
+    gpio_init(EDGE_GPIO_3);
+    gpio_init(EDGE_GPIO_4);
+    gpio_set_dir(EDGE_GPIO_1, GPIO_IN);
+    gpio_set_dir(EDGE_GPIO_2, GPIO_IN);
+    gpio_set_dir(EDGE_GPIO_3, GPIO_IN);
+    gpio_set_dir(EDGE_GPIO_4, GPIO_IN);
+    gpio_pull_down(EDGE_GPIO_1);
+    gpio_pull_down(EDGE_GPIO_2);
+    gpio_pull_down(EDGE_GPIO_3);
+    gpio_pull_down(EDGE_GPIO_4);
+}
+
+/*
+    Interrupt Service Routine for measuring time period between two rising edges
+    Measures time period between two rising edges of the encoder
+    Writes the time period to TimePeriod array
+    Writes the number of encoder waves to REVOLUTIONS array
+
+    @param gpio: GPIO pin number for interrupt
+    @param events: Events that triggered the interrupt
+*/
+void gpio_callback_channel(uint gpio, uint32_t events) {
+    if (events & GPIO_IRQ_EDGE_RISE) {
+        uint64_t timestamp = time_us_64();
+
+        if(gpio == EDGE_GPIO_1){
+            if(log_value_1) {
+                TimeStamp[0][0] = timestamp;
+                log_value_1 = false;
+            }
+            else if (!log_value_1) {
+                REVOLUTIONS[0] += 1;
+                TimeStamp[0][1] = timestamp;
+                log_value_1 = true;
+            }
+        }
+        
+        if(gpio == EDGE_GPIO_2){
+            if(log_value_2) {
+                TimeStamp[1][0] = timestamp;
+                log_value_2 = false;
+            }
+            else if (!log_value_2){
+                TimeStamp[1][1] = timestamp;
+                log_value_2 = true;
+                REVOLUTIONS[1] += 1;
+            }
+        }
+
+        if(gpio == EDGE_GPIO_3){
+            if(log_value_3) {
+                TimeStamp[2][0] = timestamp;
+                log_value_3 = false;
+            }
+            else if (!log_value_3){
+                TimeStamp[2][1] = timestamp;
+                log_value_3 = true;
+                REVOLUTIONS[1] += 1;
+            }
+        }
+
+        if(gpio == EDGE_GPIO_4){
+            if(log_value_4) {
+                TimeStamp[3][0] = timestamp;
+                log_value_4 = false;
+            }
+            else if (!log_value_4){
+                TimeStamp[3][1] = timestamp;
+                log_value_4 = true;
+                REVOLUTIONS[3] += 1;
+            }
+        }
+    }
+    if(TimeStamp[0][1] > TimeStamp[0][0]){
+        TimePeriod[0] = TimeStamp[0][1] - TimeStamp[0][0];
+    }
+    if(TimeStamp[1][1] > TimeStamp[1][0]){
+        TimePeriod[1] = TimeStamp[1][1] - TimeStamp[1][0];
+    }
+    if(TimeStamp[2][1] > TimeStamp[2][0]){
+        TimePeriod[2] = TimeStamp[2][1] - TimeStamp[2][0];
+    }
+    if(TimeStamp[3][1] > TimeStamp[3][0]){
+        TimePeriod[3] = TimeStamp[3][1] - TimeStamp[3][0];
+    }
+}
+
+/*
+    Function to bind interrupts to GPIO pins
+    Binds interrupts to GPIO pins for encoder channels
+*/
+void bind_encoder_interrupts(void){
+    gpio_set_irq_enabled_with_callback(EDGE_GPIO_1, GPIO_IRQ_EDGE_RISE, true, &gpio_callback_channel);
+    gpio_set_irq_enabled_with_callback(EDGE_GPIO_2, GPIO_IRQ_EDGE_RISE, true, &gpio_callback_channel);
+    gpio_set_irq_enabled_with_callback(EDGE_GPIO_3, GPIO_IRQ_EDGE_RISE, true, &gpio_callback_channel);
+    gpio_set_irq_enabled_with_callback(EDGE_GPIO_4, GPIO_IRQ_EDGE_RISE, true, &gpio_callback_channel);
+}
+
+/*
+    USB IRQ Handler
+    Reads the USB buffer
+*/
+void usb_irq_handler(void) {
+    readUSBBuffer();
+}
+
+int main() {
+
+    // Initialize stdio
+    stdio_init_all();
+
+    sleep_ms(3000); // To test
+
+    // Initialize TinyUSB stack
+    tusb_init();
+    push_message("******STACK UP AND RUNNING**********\n");
+    push_message("USB Initialized\n");
+
+    repeating_timer_t timer;
+    bool timer_started = add_repeating_timer_ms(10, timer_callback, NULL, &timer);
+    if(timer_started) push_message("Timer started\n");
+    else push_message("Timer not started\n");
+
+    // Initialize all the pins
+    init_motor_pins();
+    push_message("Motor pins initialized\n");
+    init_interrupt_pins();
+    push_message("Interrupt pins initialized\n");
+    init_pwm_pins();
+    push_message("PWM pins initialized\n");
+
+    // Enable USB IRQ
+    irq_set_exclusive_handler(USBCTRL_IRQ, usb_irq_handler);
+    irq_set_enabled(USBCTRL_IRQ, true);
+    push_message("USB IRQ enabled\n");
+
+    // Bind the encoder pins to interrupts
+    bind_encoder_interrupts();
+    push_message("Encoder interrupts bound\n");
+
+    push_message("Ready to take input!\n");
+
+    while (allocate_pwm) {
+        tight_loop_contents();
+    }
+
+    return 0;
+}
