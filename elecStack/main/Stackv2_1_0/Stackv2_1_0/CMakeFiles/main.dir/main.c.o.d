@@ -63,9 +63,6 @@ CMakeFiles/main.dir/main.c.o: \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
- /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
- /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdio.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/reent.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
@@ -110,4 +107,7 @@ CMakeFiles/main.dir/main.c.o: \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb_dpram.h \
  /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/pinPlan.h \
  /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/motorDriver.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
  /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/usbDriver.h

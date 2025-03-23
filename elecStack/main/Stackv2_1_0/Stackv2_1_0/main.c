@@ -10,15 +10,16 @@
     @return: true
 */
 bool timer_callback(repeating_timer_t *t) {
-    if (allocate_pwm) {
-        set_pwm(PWM_PIN_1, pwmValues[0]);
-        set_pwm(PWM_PIN_2, pwmValues[1]);
-        set_pwm(PWM_PIN_3, pwmValues[2]);
-        set_pwm(PWM_PIN_4, pwmValues[3]);
-    }
+    // if (allocate_pwm) {
+    //     // push_message("Timer callback, allocating pwm\n");
+    //     set_pwm(PWM_PIN_1, pwmValues[0]);
+    //     set_pwm(PWM_PIN_2, pwmValues[1]);
+    //     set_pwm(PWM_PIN_3, pwmValues[2]);
+    //     set_pwm(PWM_PIN_4, pwmValues[3]);
+    // }
 
-    sendUSBMessage(TUSB_MSG_ID_ENCODER, (uint8_t *)REVOLUTIONS, 16);
-    sendUSBMessage(TUSB_MSG_ID_IMU, (uint8_t *)imuValue, 4);
+    // sendUSBMessage(TUSB_MSG_ID_ENCODER, (uint8_t *)REVOLUTIONS, 16);
+    // sendUSBMessage(TUSB_MSG_ID_IMU, (uint8_t *)imuValue, 4);
 
     return true;
 }
@@ -128,14 +129,14 @@ void bind_encoder_interrupts(void){
     gpio_set_irq_enabled_with_callback(EDGE_GPIO_4, GPIO_IRQ_EDGE_RISE, true, &gpio_callback_channel);
 }
 
-/*
-    USB IRQ Handler
-    Reads the USB buffer
-*/
-// void usb_irq_handler(void) {
-//     printf("USB IRQ\n");
+// /*
+//     USB Interrupt Service Routine
+//     Reads the USB buffer and processes the message
+// */
+// void usb_callback() {
 //     readUSBBuffer();
 // }
+
 
 int main() {
 
@@ -157,32 +158,54 @@ int main() {
     push_message("USB Initialized.....................NEAT\n");
 
     repeating_timer_t timer;
-    bool timer_started = add_repeating_timer_ms(10, timer_callback, NULL, &timer);
-    if(timer_started) push_message("Timer started..................NEAT\n");
-    else push_message("Timer not started...............ERROR\n");
+    // bool timer_started = add_repeating_timer_ms(100, timer_callback, NULL, &timer);
+    bool timer_started = false;
+    if(timer_started) push_message("Timer started.......................NEAT\n");
+    else push_message("Timer not started..................ERROR\n");
 
     // Initialize all the pins
     init_motor_pins();
+    set_motor_dirn();
     push_message("Motor pins initialized..............NEAT\n");
+    sleep_ms(2);
     init_interrupt_pins();
     push_message("Interrupt pins initialized..........NEAT\n");
+    sleep_ms(2);
     init_pwm_pins();
     push_message("PWM pins initialized................NEAT\n");
+    sleep_ms(2);
 
     // Bind the encoder pins to interrupts
     bind_encoder_interrupts();
     push_message("Encoder interrupts bound............NEAT\n");
-
+    sleep_ms(10);
     push_message("Ready to take input!................NEAT\n");
+    sleep_ms(2);
 
-    while (allocate_pwm) {
+    uint16_t i = 0;
+
+    while (true) {
         tud_task(); // tinyusb device task
         readUSBBuffer();
-        tud_cdc_write_clear();
-        tight_loop_contents();
-        sleep_ms(2);
-        // push_message("\n");
         // tight_loop_contents();
+        // if(i == 100){
+        //     for(int i = 0; i < 4; i++){
+        //         printf("Motor %d: %lu\n", i, pwmValues[i]);
+        //     }
+        //     i = 0;
+        // }
+        // i++;
+
+        if(i == 10){
+            set_pwm(PWM_PIN_1, pwmValues[0]);
+            set_pwm(PWM_PIN_2, pwmValues[1]);
+            set_pwm(PWM_PIN_3, pwmValues[2]);
+            set_pwm(PWM_PIN_4, pwmValues[3]);
+            i = 0;
+        }
+        i++;
+
+        sleep_ms(10);
     }
 
     return 0;

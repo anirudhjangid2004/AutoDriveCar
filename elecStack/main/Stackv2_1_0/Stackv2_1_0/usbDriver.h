@@ -1,25 +1,32 @@
+#ifndef USBDRIVER_H
+#define USBDRIVER_H
+
 #include <tusb.h>
 #include <stdarg.h>
+#include "motorDriver.h"
+#include "pinPlan.h"
 // #include "EncoderData.h"
 
 
 #define USB_BUFFER_SIZE 64
 #define MAX_PACKET_SIZE 32
 
-#define TUSB_MSG_START 0xFD
-#define TUSB_MSG_STOP  0xFE
+#define TUSB_MSG_START (uint8_t)0xFA
+#define TUSB_MSG_STOP  (uint8_t)0xFB
 #define TUSB_MSG_RESEND 0x78
 #define TUSB_MSG_ID_LOG_STATEMENTS 0x4C
 
-#define TUSB_MSG_ID_PING     0x50
+#define TUSB_MSG_ID_PING      0x50
 #define TUSB_MSG_ERR_OVER_LEN 0x4F
 #define TUSB_MSG_ERR_CHECKSUM 0x4E
 #define TUSB_MSG_ERR_UNKNOWN  0x4D
 
-#define TUSB_MSG_ID_ACTUATOR 0x61
-#define TUSB_MSG_ID_ENCODER  0x65
-#define TUSB_MSG_ID_MOTOR    0x6D
-#define TUSB_MSG_ID_IMU      0x69
+#define TUSB_MSG_ID_ACTUATOR (uint8_t)0x61
+#define TUSB_MSG_ID_ENCODER  (uint8_t)0x65
+#define TUSB_MSG_ID_MOTOR    (uint8_t)0x6D
+#define TUSB_MSG_ID_IMU      (uint8_t)0x69
+
+bool skip_checksum = true;
 
 uint8_t pwmValues[4] = {0, 0, 0, 0};
 uint8_t imuValue[4] = {0, 0, 0, 0};
@@ -44,8 +51,9 @@ uint32_t sendUSBMessage(uint8_t msgID, uint8_t *data, uint8_t len) {
     uint8_t msg[64];
     msg[0] = TUSB_MSG_START;
     msg[1] = msgID;
+    msg[2] = len;
     for (int i = 0; i < len; i++) {
-        msg[i + 2] = data[i];
+        msg[i + 3] = data[i];
     }
 
     uint8_t checksum = 0;
@@ -57,9 +65,13 @@ uint32_t sendUSBMessage(uint8_t msgID, uint8_t *data, uint8_t len) {
 
     msg[len + 3] = checksum;
     msg[len + 4] = TUSB_MSG_STOP;
-    return tud_cdc_write(msg, len + 3);
+    return tud_cdc_write(msg, len + 4);
 }
 
+/*
+    Function to read the USB buffer
+    Reads the USB buffer and processes the message
+*/
 uint32_t readUSBBuffer(){
 
     if(!tud_cdc_connected()) {
@@ -67,59 +79,93 @@ uint32_t readUSBBuffer(){
         return 2;
     }
 
-    // push_message("Reading USB Buffer\n");
-
-    uint8_t buffer[USB_BUFFER_SIZE];
+    uint8_t buffer[USB_BUFFER_SIZE] = {0};
     uint8_t recLen = tud_cdc_available(); 
 
     if(recLen > USB_BUFFER_SIZE){
-        sendUSBMessage(TUSB_MSG_RESEND, resendMsg_OverLen, 1);
+        push_message("Over length message received\n");
         return 1;
     }
 
     if(recLen > 0){
-        tud_cdc_read(buffer, recLen);
+        uint32_t count = tud_cdc_read(buffer, recLen);
         
-        uint8_t msgID = buffer[1];
-        uint8_t len = buffer[2];
+        // Read the received message
+        printf("Received HEX: ");
+        for (uint32_t i = 0; i < count; i++) {
+            printf("%02X ", buffer[i]);
+        }
+        printf("\n");
+
+        // Find the start byte
+        uint8_t start = 0;
+
+        if(buffer[start] == TUSB_MSG_START){
+            push_message("First index is start\n");
+        }
+
+        while (start < recLen && buffer[start] != TUSB_MSG_START) {
+            push_message("Start byte not found\n");
+            start++;
+        }
+
+        if(start == recLen){
+            push_message("No start byte found finally\n");
+            return 1;
+        }
+
+        uint8_t msgID = buffer[start + 1];
+        uint8_t len = buffer[start + 2];
         uint8_t checksum = 0;
-        
+
+        // Verify the checksum
         checksum ^= msgID;
         checksum ^= len;
         for (int i = 0; i < len; i++) {
-            checksum ^= buffer[i + 3];
+            checksum ^= buffer[i + 3 + start];
         }
         
-        if(checksum == buffer[recLen - 2]){
-            push_message("\n Message received \n");
+        if(checksum == buffer[recLen - 2 + start] || skip_checksum){
+
             switch (msgID) {
                 
                 case TUSB_MSG_ID_ACTUATOR:
-                    push_message("\n Actuator ID aayi hai \n");
+                    push_message("\n Actuator values received\n");
                     actuatorValue = buffer[3];
                     break;
 
                 case TUSB_MSG_ID_MOTOR:
-                    push_message("\n Motor ID aayi hai \n");
+                    push_message("Motor values received\n");
                     for(uint8_t i = 0; i < 4; i++){
                         pwmValues[i] = buffer[i + 3];
                     }
-                    push_message("Motor values received\n");
+            //         set_pwm(PWM_PIN_1, buffer[3]);
+            //         set_pwm(PWM_PIN_2, buffer[4]);
+            //         set_pwm(PWM_PIN_3, buffer[5]);
+            // s       set_pwm(PWM_PIN_4, buffer[6]);
+                    push_message("Motor values set\n");
+                    sleep_ms(4);
+                    for(uint8_t i = 0; i < 4; i++){
+                        printf("Motor %d: %d\n", i, pwmValues[i]);
+                    }
                     break;
                 
                 default:
-                    push_message("\n Unknown ID aayi hai \n");
-                    sendUSBMessage(TUSB_MSG_RESEND, resendMsg_Unknown, 1);
+                    push_message("\n Unknown ID received \n");
                     break;
             }
         }
         else{
-            sendUSBMessage(TUSB_MSG_ERR_CHECKSUM, resendMsg_Checksum, 1);
+            push_message("Checksum error\n");
         }
+        sleep_ms(2);
         push_message("Message read\n");
     }
+    // To clear the buffer off
+    tud_cdc_write_clear();
+    // push_message("Buffer cleared\n");
+    sleep_ms(4);
     return 0;
-
 }
 
 uint32_t push_message(const char* format, ...){
@@ -144,11 +190,6 @@ uint32_t push_message(const char* format, ...){
     message_len = strlen(buffer);
     size_t offset = 0;
 
-    // while (offset < message_len) {
-    //     size_t chunk_size = (message_len - offset > MAX_PACKET_SIZE) ? MAX_PACKET_SIZE : (message_len - offset);
-    //     sendUSBMessage(TUSB_MSG_ID_LOG_STATEMENTS, (uint8_t *)buffer + offset, chunk_size);
-    //     offset += chunk_size;
-    // }
     if (tud_cdc_write_available() >= message_len) {
         tud_cdc_write(buffer, message_len);
         tud_cdc_write_flush();
@@ -158,3 +199,5 @@ uint32_t push_message(const char* format, ...){
 
     return 0;
 }
+
+#endif

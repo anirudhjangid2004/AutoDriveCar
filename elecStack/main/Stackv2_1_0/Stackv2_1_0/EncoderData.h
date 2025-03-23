@@ -1,5 +1,4 @@
 #include "pico/stdlib.h"
-#include "hardware/pwm.h"
 #include "hardware/gpio.h"
 #include <stdio.h>
 #include <stdint.h>
@@ -10,7 +9,7 @@
 #include "hardware/structs/usb.h"
 #include "hardware/timer.h"
 
-#define PWM_PERIOD_US 1000 // 1 kHz frequency
+// #define PWM_PERIOD_US 1000 // 1 kHz frequency
 
 uint64_t TimeStamp[4][2] = {{0, 0}, {0, 0}, {0, 0}, {0, 0}};
 uint64_t TimePeriod[4] = {0, 0, 0, 0};
