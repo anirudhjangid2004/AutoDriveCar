@@ -1717,6 +1717,56 @@ CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpi
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h
 
+CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/assert.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/config.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/error.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/time.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_time/include/pico/timeout_helper.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/resets.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/resets.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/pico_platform/include/pico/platform.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_ansi.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/_newlib_version.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/assert.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_default_types.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/ieeefp.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/newlib.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/stdint.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_intsup.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/_stdint.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/cdefs.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/config.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/features.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdbool.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stddef.h \
+  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/lib/gcc/arm-none-eabi/14.2.1/include/stdint.h \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h
+
 CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c.o: /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/boards/include/boards/pico.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/hardware_claim/include/hardware/claim.h \
@@ -3531,6 +3581,7 @@ CMakeFiles/main.dir/main.c.o: main.c \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/intctrl.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/io_bank0.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h \
@@ -3541,6 +3592,7 @@ CMakeFiles/main.dir/main.c.o: main.c \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/usb.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/m0plus.h \
@@ -3559,6 +3611,7 @@ CMakeFiles/main.dir/main.c.o: main.c \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/include/hardware/irq.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
   /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_resets/include/hardware/resets.h \
@@ -3602,6 +3655,7 @@ CMakeFiles/main.dir/main.c.o: main.c \
   EncoderData.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
+  imuDriver.h \
   motorDriver.h \
   pinPlan.h \
   usbDriver.h
@@ -3618,8 +3672,6 @@ main.c:
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdlib/stdlib.c:
 
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
-
-/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c:
 
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb/reset_interface.h:
 
@@ -3703,8 +3755,6 @@ main.c:
 
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
 
-/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
-
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_uart/uart.c:
 
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/timer.c:
@@ -3718,6 +3768,16 @@ main.c:
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pll/pll.c:
 
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_irq/irq.c:
+
+/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h:
+
+/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_stdio_usb/stdio_usb.c:
+
+/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h:
+
+/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/dreq.h:
+
+/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c:
 
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_gpio/gpio.c:
 
@@ -3751,6 +3811,8 @@ main.c:
 
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_timer/include/hardware/timer.h:
 
+imuDriver.h:
+
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_flash/flash.c:
 
 /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/string.h:
@@ -3764,6 +3826,8 @@ main.c:
 /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/io_bank0.h:
 
 /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/c++/14.2.1/cstdlib:
+
+/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
 
 /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/sched.h:
 

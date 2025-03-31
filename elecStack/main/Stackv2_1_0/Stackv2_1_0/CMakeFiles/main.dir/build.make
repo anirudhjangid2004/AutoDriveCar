@@ -1195,6 +1195,20 @@ CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
 	/home/anirudh/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
+CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c
+CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o"
+	/home/anirudh/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o -c /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c
+
+CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.i"
+	/home/anirudh/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.i
+
+CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.s"
+	/home/anirudh/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.o" \
@@ -1277,7 +1291,8 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/video/video_device.c.o" \
 "CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o" \
 "CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o" \
-"CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+"CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
+"CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
@@ -1363,11 +1378,12 @@ main.elf: CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/c
 main.elf: CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.c.o
 main.elf: CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_fifo.c.o
 main.elf: CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+main.elf: CMakeFiles/main.dir/home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/i2c.c.o
 main.elf: CMakeFiles/main.dir/build.make
 main.elf: pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 main.elf: /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/pico_crt0/rp2040/memmap_default.ld
 main.elf: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Linking CXX executable main.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Linking CXX executable main.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 	/home/anirudh/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objdump -h /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/main.elf > main.dis
 	/home/anirudh/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-objdump -d /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/main.elf >> main.dis

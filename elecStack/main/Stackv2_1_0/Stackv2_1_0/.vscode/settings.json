@@ -46,6 +46,7 @@
     ],
     "files.associations": {
         "*.conf": "bitbake",
-        "*.inc": "bitbake"
+        "*.inc": "bitbake",
+        "motordriver.h": "c"
     }
 }

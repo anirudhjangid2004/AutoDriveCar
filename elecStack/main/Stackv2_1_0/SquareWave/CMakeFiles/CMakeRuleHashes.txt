@@ -1,0 +1,6 @@
+# Hashes of file build rules.
+a1848f217b0e7fcc2867a91eeb1b49c8 pico-sdk/src/rp2040/boot_stage2/CMakeFiles/bs2_default_bin
+aaf61d55762f0c0b41ed9b751005ddef pico-sdk/src/rp2040/boot_stage2/bs2_default.bin
+e69b03bc894f27b90636d27d1087b675 pico-sdk/src/rp2040/boot_stage2/bs2_default_padded_checksummed.S
+d08daa3f3ef00343efadadeb5f96723f pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
+776f65b7deb240bbf01220bc6cb77245 pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h

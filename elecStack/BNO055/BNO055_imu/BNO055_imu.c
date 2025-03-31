@@ -76,10 +76,10 @@ int main(void){
 
     // Configure the I2C Communication
     i2c_init(I2C_PORT, 115200);
-    gpio_set_function(4, GPIO_FUNC_I2C);
-    gpio_set_function(5, GPIO_FUNC_I2C);
-    gpio_pull_up(4);
-    gpio_pull_up(5);
+    gpio_set_function(I2C_SDA, GPIO_FUNC_I2C);
+    gpio_set_function(I2C_SCL, GPIO_FUNC_I2C);
+    gpio_pull_up(I2C_SDA);
+    gpio_pull_up(I2C_SCL);
 
     sleep_ms(5000); // Add a short delay to help BNO005 boot up
     // Call accelerometer initialisation function
@@ -106,6 +106,7 @@ int main(void){
         // Read gyroscope data
         uint8_t gyro[6];
         uint8_t gyro_reg = GYRO_START_REG;
+        printf("Gyro Register address: %d\n", &gyro_reg);
         i2c_write_blocking(I2C_PORT, addr, &gyro_reg, 1, true);
         i2c_read_blocking(I2C_PORT, addr, gyro, 6, false);
         int16_t gyroX = ((int16_t)gyro[1] << 8) | gyro[0];
@@ -117,9 +118,9 @@ int main(void){
         float dpsY = gyroY / GYRO_SENSITIVITY;
         float dpsZ = gyroZ / GYRO_SENSITIVITY;
 
-        printf("Gyro -> X: %6.2f dps  Y: %6.2f dps  Z: %6.2f dps\n", dpsX, dpsY, dpsZ);
+        // printf("Gyro -> X: %6.2f dps  Y: %6.2f dps  Z: %6.2f dps\n", dpsX, dpsY, dpsZ);
         // Print to serial monitor
-        printf("X: %6.2f    Y: %6.2f    Z: %6.2f\n", f_accelX, f_accelY, f_accelZ);
-        sleep_ms(100);
+        // printf("X: %6.2f    Y: %6.2f    Z: %6.2f\n", f_accelX, f_accelY, f_accelZ);
+        sleep_ms(400);
     }
 }

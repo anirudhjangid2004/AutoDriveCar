@@ -1,6 +1,6 @@
 CMakeFiles/main.dir/main.c.o: \
  /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/main.c \
- /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/EncoderData.h \
+ /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/imuDriver.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_stdlib_headers/include/pico/stdlib.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/common/pico_base_headers/include/pico/types.h \
@@ -70,6 +70,11 @@ CMakeFiles/main.dir/main.c.o: \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/machine/_types.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/lock.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/sys/stdio.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+ /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/pinPlan.h \
+ /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/usbDriver.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/tusb.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/common/tusb_common.h \
  /home/anirudh/.pico-sdk/toolchain/14_2_Rel1/arm-none-eabi/include/inttypes.h \
@@ -102,12 +107,11 @@ CMakeFiles/main.dir/main.c.o: \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc_device.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/cdc/cdc.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/lib/tinyusb/src/class/vendor/vendor_device.h \
- /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/usb.h \
- /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb.h \
- /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb_dpram.h \
- /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/pinPlan.h \
  /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/motorDriver.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2_common/hardware_pwm/include/hardware/pwm.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/pwm.h \
  /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/pwm.h \
- /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/usbDriver.h
+ /home/anirudh/EDL/AutoDriveCar/elecStack/main/Stackv2_1_0/Stackv2_1_0/EncoderData.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_regs/include/hardware/regs/usb.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb.h \
+ /home/anirudh/.pico-sdk/sdk/2.1.1/src/rp2040/hardware_structs/include/hardware/structs/usb_dpram.h

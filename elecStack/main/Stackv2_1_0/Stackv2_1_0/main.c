@@ -1,7 +1,17 @@
+#include "imuDriver.h"
 #include "EncoderData.h"
 #include "pinPlan.h"
 #include "motorDriver.h"
 #include "usbDriver.h"
+
+
+void finish_init(void) {
+    // Initialize the IMU
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_put(LED_PIN, 1);
+    push_message("INITIALIZATION FINISH...............NEAT\n");
+}
 
 /*
     Hardware Timer ISR, sets the received PWM
@@ -18,9 +28,9 @@ bool timer_callback(repeating_timer_t *t) {
     //     set_pwm(PWM_PIN_4, pwmValues[3]);
     // }
 
+
     // sendUSBMessage(TUSB_MSG_ID_ENCODER, (uint8_t *)REVOLUTIONS, 16);
     // sendUSBMessage(TUSB_MSG_ID_IMU, (uint8_t *)imuValue, 4);
-
     return true;
 }
 
@@ -167,10 +177,10 @@ int main() {
     init_motor_pins();
     set_motor_dirn();
     push_message("Motor pins initialized..............NEAT\n");
-    sleep_ms(2);
+    sleep_ms(100);
     init_interrupt_pins();
     push_message("Interrupt pins initialized..........NEAT\n");
-    sleep_ms(2);
+    sleep_ms(100);
     init_pwm_pins();
     push_message("PWM pins initialized................NEAT\n");
     sleep_ms(2);
@@ -178,34 +188,51 @@ int main() {
     // Bind the encoder pins to interrupts
     bind_encoder_interrupts();
     push_message("Encoder interrupts bound............NEAT\n");
-    sleep_ms(10);
-    push_message("Ready to take input!................NEAT\n");
-    sleep_ms(2);
+    sleep_ms(500);
 
-    uint16_t i = 0;
+    // Initialize the IMU
+    imu_init();
+    push_message("IMU initialized.....................NEAT\n");
+    sleep_ms(1000); // Long enough to boot the IMU
+
+    push_message("Ready to take input!................NEAT\n");
+    sleep_ms(200);
+
+    finish_init();
+
+    uint8_t i = 0;
+    // uint8_t j = 0;
 
     while (true) {
         tud_task(); // tinyusb device task
         readUSBBuffer();
         // tight_loop_contents();
-        // if(i == 100){
-        //     for(int i = 0; i < 4; i++){
-        //         printf("Motor %d: %lu\n", i, pwmValues[i]);
-        //     }
-        //     i = 0;
+        // if(j == 100){
+        //     // for(int i = 0; i < 4; i++){
+        //     //     printf("Motor %d: %lu\n", i, pwmValues[i]);
+        //     // }
+
+        //     printf("Accel -> X: %6.2f dps  Y: %6.2f dps  Z: %6.2f dps\n", accel_final[0]/100.00, accel_final[1]/100.00, accel_final[2]/100.00);
+        //     // Print to serial monitor
+        //     // printf("X: %6.2f    Y: %6.2f    Z: %6.2f\n", f_accelX, f_accelY, f_accelZ);
+
+        //     j = 0;
         // }
-        // i++;
+        // j++;
 
         if(i == 10){
             set_pwm(PWM_PIN_1, pwmValues[0]);
             set_pwm(PWM_PIN_2, pwmValues[1]);
             set_pwm(PWM_PIN_3, pwmValues[2]);
             set_pwm(PWM_PIN_4, pwmValues[3]);
+            
+            get_accel();
+            get_gyro();
             i = 0;
         }
         i++;
 
-        sleep_ms(10);
+        sleep_ms(5);
     }
 
     return 0;

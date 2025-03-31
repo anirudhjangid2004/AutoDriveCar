@@ -51,6 +51,7 @@ target_link_libraries(main
         hardware_gpio
         hardware_timer
         hardware_irq
+        hardware_i2c
         # hardware_clocks
         # hardware_regs_usb
         # hardware_structs_usb
