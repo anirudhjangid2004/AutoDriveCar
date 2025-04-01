@@ -1,3 +1,11 @@
+
+import serial
+import sys
+
+# Constants for the protocol
+START_BYTE = 0xFA  # Start byte
+STOP_BYTE = 0xFB   # Stop byte
+
 def hex_string_to_bytes(hex_string):
     """Convert a hex string (e.g., '6D 04 FA FF') to a byte array."""
     try:
@@ -5,12 +13,6 @@ def hex_string_to_bytes(hex_string):
     except ValueError:
         print("Error: Invalid hex string format")
         return None
-import serial
-import sys
-
-# Constants for the protocol
-START_BYTE = 0xFA  # Start byte
-STOP_BYTE = 0xFB   # Stop byte
 
 def calculate_checksum(data):
     """Calculate checksum as the XOR of all bytes."""
@@ -33,6 +35,16 @@ def send_data(serial_port, data):
     serial_port.write(packet)
     print(f"Sent: {packet}")
 
+def find_start_byte(serial_port):
+    """Find the start byte in the incoming data stream."""
+    while True:
+        byte = serial_port.read(1)
+        if not byte:
+            print("Error: No data received")
+            return None
+        if byte[0] == START_BYTE:
+            return byte
+            
 def receive_data(serial_port):
     """Receive data from tiny USB, validate checksum, and print the payload."""
     # Read the start byte
@@ -71,7 +83,7 @@ def receive_data(serial_port):
 def main():
     # Open the serial port
     try:
-        serial_port = serial.Serial('/dev/ttyACM1', baudrate=115200, timeout=1)
+        serial_port = serial.Serial('/dev/ttyACM0re', baudrate=115200, timeout=1)
     except serial.SerialException as e:
         print(f"Error: Could not open serial port: {e}")
         sys.exit(1)
